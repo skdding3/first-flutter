@@ -2,10 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(App());
+  runApp(const App());
 }
 
 class App extends StatelessWidget {
+  const App({super.key});
+
   @override // build method override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -13,7 +15,7 @@ class App extends StatelessWidget {
       home: Scaffold(
           backgroundColor: Colors.black,
           body: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 40),
+            padding: const EdgeInsets.symmetric(horizontal: 40),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -43,18 +45,18 @@ class App extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 180,
                 ),
-                Text(
+                const Text(
                   "Total Balance",
                   style: TextStyle(fontSize: 22, color: Colors.white),
                 ),
-                Text(
+                const Text(
                   "₩50000",
                   style: TextStyle(fontSize: 42, color: Colors.white),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Row(
@@ -63,7 +65,7 @@ class App extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: Colors.amber,
                             borderRadius: BorderRadius.circular(45)),
-                        child: Padding(
+                        child: const Padding(
                           padding: EdgeInsets.symmetric(
                               vertical: 15, horizontal: 40),
                           child:
