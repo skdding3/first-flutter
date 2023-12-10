@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -62,15 +61,27 @@ class App extends StatelessWidget {
                 Row(
                   children: [
                     Container(
-                        decoration: BoxDecoration(
-                            color: Colors.amber,
-                            borderRadius: BorderRadius.circular(45)),
-                        child: const Padding(
-                          padding: EdgeInsets.symmetric(
-                              vertical: 15, horizontal: 40),
-                          child:
-                              Text("Transfer", style: TextStyle(fontSize: 22)),
-                        )),
+                      decoration: BoxDecoration(
+                          color: Colors.amber,
+                          borderRadius: BorderRadius.circular(45)),
+                      child: const Padding(
+                        padding:
+                            EdgeInsets.symmetric(vertical: 15, horizontal: 40),
+                        child: Text("Transfer", style: TextStyle(fontSize: 22)),
+                      ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                          color: Colors.amber,
+                          borderRadius: BorderRadius.circular(45)),
+                      child: const Padding(
+                        padding:
+                            EdgeInsets.symmetric(vertical: 15, horizontal: 40),
+                        child: Text("Request",
+                            style:
+                                TextStyle(fontSize: 22, color: Colors.white)),
+                      ),
+                    ),
                   ],
                 )
               ],
